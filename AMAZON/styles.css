@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-belt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232f3e;
+  padding: 10px 20px;
+}
+
+.hov:hover {
+  border: 1px solid white;
+}
