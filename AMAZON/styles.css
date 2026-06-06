@@ -165,6 +165,8 @@ body {
 .nav-main-content span {
   padding: 2px 3px;
   border: 1px solid #37475a;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .hov:hover {
@@ -215,6 +217,7 @@ main .hero img {
   width: 125px;
   margin: 20px 10px 0px 0px;
 }
+
 .cards .card .images p {
   font-size: 14px;
   color: gray;
@@ -222,7 +225,7 @@ main .hero img {
   text-align: left;
 }
 
-main .kitchen {
+main .kitchen, .electronics {
   position: relative;
   top: 250px;
   width: 100%;
@@ -231,20 +234,108 @@ main .kitchen {
   background-color: white;
 }
 
-main .kitchen span {
+main .kitchen span, .electronics span {
   font-size: 18px;
   font-weight: bold;
   margin-right: 5px;
 }
 
-main .kitchen-images {
+main .kitchen-images, .electronics-images {
   width: 100%;
   margin: 5px 10px;
   display: flex;
 }
 
-.kitchen-images img {
+.kitchen-images img, .electronics-images img {
   width: 250px;
   margin-left: 10px;
   height: 200px;
+}
+
+footer {
+  position: relative;
+  top: 260px;
+  
+}
+
+footer .about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #232f3e;
+  padding: 40px;
+  
+}
+
+.about .nav-footer{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: lighter;
+  color: rgb(124, 120, 120);
+  gap: 10px;
+  margin-left: 150px;
+}
+
+.nav-footer span:first-child {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-footer span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+hr {
+  background-color: #232f3e;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: #232f3e;
+  padding: 40px;
+    color: rgb(124, 120, 120);
+}
+
+.footer-footer {
+  width: 100%;
+  background-color: #131a22;
+  color: rgb(158, 154, 154);
+  font-size: 14px;
+  padding: 50px 200px 50px 100px;
+}
+
+.footer-footer .services {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 40px;
+  padding: 50px 350px 50px 100px;
+  flex-wrap: wrap;
+}
+
+.services .services-nav {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.services-nav span:first-child {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.privacy-copy {
+  text-align: center;
+}
+
+.services-nav span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
