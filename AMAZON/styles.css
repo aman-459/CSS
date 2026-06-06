@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f6;
+}
+
 .nav-belt {
   width: 100%;
   min-height: 70px;
@@ -33,7 +38,7 @@
 .location {
   display: flex;
   flex-direction: column;
-   padding: 12px 18px;
+  padding: 12px 18px;
   border: 1px solid #232f3e;
 }
 
@@ -71,12 +76,12 @@
   height: 100%;
   border: none;
   outline: none;
-  margin-left: -255px;
+  margin-left: -294px;
   font-size: 16px;
   padding: 0 10px;
 }
 
-.search svg {  
+.search svg {
   width: 50px;
   height: 100%;
   background-color: orange;
@@ -88,14 +93,14 @@
   display: flex;
   align-items: center;
   color: white;
-   padding: 12px 18px;
+  padding: 12px 18px;
   border: 1px solid #232f3e;
 }
 
 .account {
   display: flex;
   flex-direction: column;
-   padding: 12px 18px;
+  padding: 12px 18px;
   border: 1px solid #232f3e;
 }
 
@@ -112,7 +117,7 @@
 .order {
   display: flex;
   flex-direction: column;
-   padding: 12px 18px;
+  padding: 12px 18px;
   border: 1px solid #232f3e;
 }
 
@@ -142,6 +147,7 @@
   background-color: #37475a;
   color: white;
 }
+
 .nav-main-content {
   display: flex;
   gap: 14px;
@@ -149,12 +155,96 @@
   font-size: 18px;
   font-weight: 400;
 }
-.nav-main-banner img{
- width: 500px;
- height: 50px;
- margin-top: 2px;
-  
+
+.nav-main-banner img {
+  width: 500px;
+  height: 50px;
+  margin-top: 2px;
 }
+
+.nav-main-content span {
+  padding: 2px 3px;
+  border: 1px solid #37475a;
+}
+
 .hov:hover {
   border-color: white;
+}
+
+main .hero img {
+  height: 550px;
+  position: absolute;
+  width: 100%;
+}
+
+.cards {
+  position: relative;
+  top: 230px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards .card {
+  width: 350px;
+  height: 370px;
+  background-color: #f3f3f6;
+  padding: 12px 18px;
+  border: 2px solid white;
+}
+
+.cards .card h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.cards .card a {
+  bottom: 12px;
+  position: absolute;
+}
+
+.cards .card .images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards .card .images img {
+  width: 125px;
+  margin: 20px 10px 0px 0px;
+}
+.cards .card .images p {
+  font-size: 14px;
+  color: gray;
+  margin-left: 10px;
+  text-align: left;
+}
+
+main .kitchen {
+  position: relative;
+  top: 250px;
+  width: 100%;
+  margin: 12px 18px;
+  padding: 12px 18px;
+  background-color: white;
+}
+
+main .kitchen span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+main .kitchen-images {
+  width: 100%;
+  margin: 5px 10px;
+  display: flex;
+}
+
+.kitchen-images img {
+  width: 250px;
+  margin-left: 10px;
+  height: 200px;
 }
