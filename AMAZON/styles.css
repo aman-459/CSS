@@ -23,10 +23,35 @@ body {
   gap: 4px 2px;
 }
 
+@media (min-width: 660px) and (max-width: 1100px) {
+  .nav-belt > div:nth-of-type(2n) {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .nav-belt > .location,
+  .nav-belt > .language,
+  .nav-belt > .account,
+  .nav-belt > .order {
+    display: none;
+  }
+}
+
 .logo {
   display: flex;
   padding: 12px 18px;
   border: 1px solid #232f3e;
+}
+
+@media (max-width: 560px) {
+  .nav-belt > .search,
+  .nav-belt > .cart {
+    display: none;
+  }
+  .nav-belt > .logo {
+    margin: auto;
+  }
 }
 
 .logo span {
@@ -52,7 +77,6 @@ body {
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  width: 200px;
   height: 40px;
   background-color: white;
   max-width: 600px;
@@ -76,7 +100,7 @@ body {
   height: 100%;
   border: none;
   outline: none;
-  margin-left: -294px;
+  /* margin-left: -294px; */
   font-size: 16px;
   padding: 0 10px;
 }
@@ -148,6 +172,12 @@ body {
   color: white;
 }
 
+@media (max-width: 740px) {
+  .nav-main {
+    display: none;
+  }
+}
+
 .nav-main-content {
   display: flex;
   gap: 14px;
@@ -157,9 +187,15 @@ body {
 }
 
 .nav-main-banner img {
-  width: 500px;
+  width: 95%;
   height: 50px;
   margin-top: 2px;
+}
+
+@media (max-width: 1100px) {
+  .nav-main-banner img {
+    display: none;
+  }
 }
 
 .nav-main-content span {
@@ -202,7 +238,7 @@ main .hero img {
 }
 
 .cards .card a {
-  bottom: 12px;
+  margin-top: 12px;
   position: absolute;
 }
 
@@ -234,6 +270,7 @@ main .kitchen, .electronics {
   background-color: white;
 }
 
+
 main .kitchen span, .electronics span {
   font-size: 18px;
   font-weight: bold;
@@ -246,8 +283,16 @@ main .kitchen-images, .electronics-images {
   display: flex;
 }
 
+@media (max-width: 1100px) {
+  main .kitchen-images, .electronics-images {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
 .kitchen-images img, .electronics-images img {
-  width: 250px;
+  width: 16%;
   margin-left: 10px;
   height: 200px;
 }
@@ -264,7 +309,15 @@ footer .about {
   justify-content: center;
   background-color: #232f3e;
   padding: 40px;
-  
+}
+
+@media (max-width: 1100px) {
+  footer .about {
+    flex-wrap: wrap;
+    padding: 40px 0px;
+    gap: 10px;
+    justify-content: left;
+  }
 }
 
 .about .nav-footer{
@@ -315,6 +368,12 @@ hr {
   margin-left: 40px;
   padding: 50px 350px 50px 100px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 1110px) {
+  .footer-footer .services {
+    padding: 0px;
+  }
 }
 
 .services .services-nav {
